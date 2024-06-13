@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/fortes.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    height: 80px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 0 5px;
+}
+
+.form-container {
+    margin-top: 200px;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex: 1;
+    padding: 0 10px;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+button {
+    background-color: #00a79d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007f7a;
+}
+
+.back-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+.back-button:hover {
+    background-color: #bbb;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-bar {
+        top: 140px;
+    }
+
+    .form-container {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .progress-bar {
+        top: 130px;
+    }
+
+    .form-container {
+        margin-top: 160px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        padding: 0;
+    }
+
+    input, textarea, select {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 18px;
+    }
+
+    .progress-bar {
+        top: 120px;
+    }
+
+    .form-container {
+        margin-top: 140px;
+    }
+
+    input, textarea, select {
+        width: calc(100% - 5px);
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
