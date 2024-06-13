@@ -180,7 +180,7 @@ button:hover {
     }
 
     input, textarea, select {
-        width: calc(100% - 10px);
+        width: 100%; /* Alteração para responsividade */
     }
 }
 
@@ -198,7 +198,7 @@ button:hover {
     }
 
     input, textarea, select {
-        width: calc(100% - 5px);
+        width: 100%; /* Alteração para responsividade */
     }
 
     .button-group {
