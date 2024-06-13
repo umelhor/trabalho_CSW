@@ -19,6 +19,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+    padding-top: 100px; 
 }
 
 .navbar {
@@ -32,6 +33,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -53,8 +55,8 @@ body {
     padding: 10px 0;
     width: 100%;
     text-align: center;
-    position: relative; /* Alterado de absolute para relative */
-    top: 150px; /* Removido translate */
+    position: relative;
+    top: 0;
 }
 
 .circle {
@@ -72,7 +74,7 @@ body {
 }
 
 .form-container {
-    margin-top: 200px; /* Aumentado para garantir espaço abaixo da progress bar */
+    margin-top: 20px;
     text-align: left;
 }
 
@@ -147,12 +149,8 @@ button:hover {
         align-items: center;
     }
 
-    .progress-bar {
-        top: 140px;
-    }
-
     .form-container {
-        margin-top: 180px;
+        padding-top: 120px;
     }
 }
 
@@ -161,12 +159,8 @@ button:hover {
         font-size: 20px;
     }
 
-    .progress-bar {
-        top: 130px;
-    }
-
     .form-container {
-        margin-top: 160px;
+        padding-top: 140px;
     }
 
     .form-row {
@@ -179,12 +173,8 @@ button:hover {
         font-size: 18px;
     }
 
-    .progress-bar {
-        top: 120px;
-    }
-
     .form-container {
-        margin-top: 140px;
+        padding-top: 160px;
     }
 
     input, textarea, select {
