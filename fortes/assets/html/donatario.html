@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Cadastro</title>
+    <link rel="stylesheet" href="../css/style_Don.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <img src="../images/logo.png" alt="fortes Logo" class="logo" style="height: 80px;">
+            </nav>
+            <div class="header-title">Pré-Cadastro
+                <div class="progress-bar">
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </header>
+        <div class="form-container">
+            <form id="preCadastroForm" onsubmit="salvarDados(event)">
+                <h2>Dados do Proponente</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" placeholder="CNPJ" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="CEP" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" id="logradouro" placeholder="Logradouro" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" placeholder="Bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="areas">Áreas Destinadas</label>
+                        <select id="areas" required>
+                            <option value="Educação">Educação</option>
+                            <option value="Saúde">Saúde</option>
+                            <option value="Meio Ambiente">Meio Ambiente</option>
+                            <option value="Cultura">Cultura</option>
+                            <option value="Esportes">Esportes</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="historico">Breve histórico e finalidades</label>
+                    <textarea id="historico" placeholder="Breve historico" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/script_Don.js"></script>
+</body>
+</html>
